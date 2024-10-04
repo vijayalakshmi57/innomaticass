@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Directory</title>
+</head>
+<style>
+  /* Global Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+/* Form Styling */
+form {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Employee List Styling */
+ol {
+    padding-left: 40px;
+}
+
+ol li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+ol li:last-child {
+    border-bottom: none;
+}
+
+/* Employee Details Table Styling */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Embedded Map Styling */
+iframe {
+    display: block;
+    margin: 20px auto;
+}
+
+</style>
+<body>
+    <h1>Employee Registration Form</h1>
+    
+    <!-- Form Section -->
+    <form action="#" method="post">
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName"><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        
+        <label for="department">Department:</label><br>
+        <select id="department" name="department">
+            <option value="HR">HR</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Marketing">Marketing</option>
+        </select><br><br>
+        
+        <label for="employeeID">Employee ID:</label><br>
+        <input type="number" id="employeeID" name="employeeID"><br><br>
+        
+        <label for="profilePicture">Profile Picture URL:</label><br>
+        <input type="url" id="profilePicture" name="profilePicture"><br><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+    
+    <!-- Employee List Section -->
+    <h2>Employee List</h2>
+    <ol>
+        <!-- List items will be dynamically added -->
+    </ol>
+    
+    <!-- Employee Details Table -->
+    <h2>Employee Details</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>ID</th>
+                <th>Department</th>
+                <th>Profile Picture</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table rows will be dynamically added -->
+        </tbody>
+    </table>
+    
+    <!-- Embedded Map Section -->
+    <h2>Company Location</h2>
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=YOUR_MAP_EMBED_URL"
+        width="600" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</body>
+</html>
